@@ -1,0 +1,304 @@
+<html >
+    <head>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+   
+
+    
+
+  </head>
+
+
+
+  <body>
+
+ 
+
+     <div id="wrapper">
+
+
+         <div id="container">
+
+
+               
+
+
+
+            <div id="topview">
+                
+
+                <div id="topview_left" style="position: relative; display: inline-block; height:100%; width: 30%; text-align: center;" >
+
+
+                  
+                      <label class="switch"  >
+                         <input type="checkbox" onclick="nightt();">
+                         <span class="slider round"></span>
+                      </label>
+
+                     
+
+                </div>
+
+                <div id="topview_right" style="position: relative; display: inline-block; height: 100%; width: 69%;">
+                  
+                   <div id="topview_right_gitwrapper" style="position: relative; display: inline-block; height: 60%; width: 90%;  margin:10px; cursor: pointer;" >
+                       
+                        <img src="img/github_text.png" style="height: 100%; display: inline-block; position: relative; float: right;">
+                        <img src="img/github_img.png" style="height: 100%; display: inline-block; position: relative; float: right;">
+                          
+
+                   </div>
+
+                </div>
+
+            </div>
+
+
+
+          <div id="left_right">
+
+            <div id="nightt"></div>
+
+            <img src="img/cosm.jpg" id="cosm">
+
+         
+             <div id="leftview">
+
+                <div id="leftview_wrapper">
+
+                  <div id="leftview_back"></div>
+                
+                <div class="progress" id="progress">
+                  <p style="position: absolute;  margin: none; height: 100%; width: 100%; font-size: 13px; color:rgba(247, 247, 247, 0.9); text-align: center; ">
+                    
+                    <p id="OxyLev" style="position: relative; display: block; top:59%; font-size: 11px; font-family:verdana; ">0.7</p>
+
+                  </p>
+                </div>
+                <p style="margin-top: 20px; font-family: verdana; font-size: 14px; color: rgba(247, 247, 247, 0.9);">Oxy Levels</p>
+
+                <div class="progress" id="progress1">
+                  
+                  <p style="position: absolute;  margin: none; height: 100%; width: 100%; font-size: 13px; color:rgba(247, 247, 247, 0.9); text-align: center; ">
+                    
+                    <p id="EngLev" style="position: relative; display: block; top:59%; font-size: 11px; font-family:verdana; ">0.7</p>
+
+                  </p>
+
+                </div>
+
+                <p style="margin-top: 20px; font-family: verdana; font-size: 14px; color: rgba(247, 247, 247, 0.9); ">Eng Levels</p>
+
+
+                
+                      <div class="progress2" id="progress2" >
+                  <p style="position: absolute;  margin: none; height: 100%; width: 100%; font-size: 13px; color:rgba(247, 247, 247, 0.9); text-align: center; ">
+                    
+                    <p id="cycles" style="position: relative; display: block; top:57%; font-size: 20px; font-family:verdana; color:rgba(247, 247, 247, 0.9); ">0</p>
+
+                  </p>
+                </div>
+
+                  <p style="margin-top: 30px; font-family: verdana; font-size: 14px; color: rgba(247, 247, 247, 0.9); ">Cycles</p>
+               
+
+                 </div>
+
+                </div> 
+
+                
+
+           
+
+
+             <div id="rightview">
+
+
+               
+
+
+                   <div id="rightview_wrapper">
+
+
+                      
+
+
+
+
+
+                    
+
+
+                       <div id="FeedWrapper">
+
+
+   
+
+
+
+
+
+
+
+
+<div id="columns" >
+
+
+  <div id="addchild" class="child" onclick="createcard();" style="background: rgba(225, 225, 225, 0.2); cursor: pointer;">
+    
+    <div id="insideCircle">
+      
+       <div id="plus">+</div>
+
+    </div>
+
+  </div>
+
+
+<!--
+
+  <div id="specimen" class="child">
+    
+   <div class="specimen_container">
+
+    <div class="round_go" id="round_go" onclick="move('OxyBar','OxyPer', 'EnyBar','EnyPer', 'specimen')">
+      
+        <div id="triangle-up" class="triangle-up"></div>
+
+    </div>
+
+     <div id="card_img" class="card_img">
+
+      <img src="img/2991.jpg" class="img" >
+
+     </div>
+
+     <div class="card_text"> 
+
+      <div class="card_text_01">
+        
+        <p class="card_text_01_position">Swamp</p>
+
+      </div>
+      <div id="card_text_02" class="card_text_02">
+
+        
+        <div id="card_text_02_oxygen" class="card_text_02_">
+          
+           <div id="card_text_02_oxygen_text" class="card_text_02_text" >
+             
+             <p class="card_text_02_text_position">Oxygen</p>
+
+           </div>
+
+           <div id="card_text_02_oxygen_percentage" class="card_text_02_percentage">
+             
+             <div id="OxyPer" class="card_text_02_percentage_position">0%</div>
+
+           </div>
+
+           <div id="card_text_02_oxygen_progressbar" class="card_text_02_progressbar">
+             
+             <div class="myProgress" id="myProgress">
+
+                 <div id="OxyBar" class="myBar"></div>
+
+             </div>
+
+           </div>
+
+        </div>
+
+
+         <div id="card_text_02_energy" class="card_text_02_">
+          
+           <div id="card_text_02_energy_text" class="card_text_02_text">
+             
+            <p class="card_text_02_text_position">Energy</p>
+
+           </div>
+
+           <div id="card_text_02_energy_percentage" class="card_text_02_percentage">
+             
+                <div id="EnyPer" class="card_text_02_percentage_position">0%</div>
+
+           </div>
+
+           <div id="card_text_02_energy_progressbar" class="card_text_02_progressbar">
+             
+                <div class="myProgress">
+
+                 <div id="EnyBar" class="myBar"></div>
+
+           </div>
+
+        </div>
+
+
+
+
+
+      </div>
+
+     </div> 
+
+   </div>
+
+ </div>
+  
+  
+  </div>
+
+ 
+-->
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                    
+                   </div>
+
+             </div>
+
+
+          </div> </div>
+
+
+         </div>
+
+
+     </div> 
+
+
+
+    <script src="progressbar.js"></script>
+    <script src="main.js"></script>
+    <script src="cards.js"></script>
+
+    <script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="http://www.tutorialspoint.com/jquery/jquery-1.3.2.min.js"></script> 
+
+    <script src="http://www.tutorialspoint.com/jquery/jquery-ui-1.7.2.custom.min.js"></script>
+
+
+ </body>
+</html>
