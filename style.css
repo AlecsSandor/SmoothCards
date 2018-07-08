@@ -2,6 +2,12 @@
 body                            { font: 9px "Verdana", Sans-Serif;  }
 
 
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+
+
 #wrapper {
 
              position: relative;
@@ -314,6 +320,12 @@ height: 100%; width: 100%; position: absolute; z-index: 0;
             overflow: scroll;
             text-align: center;
 
+
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+
 	
 }
 
@@ -339,6 +351,13 @@ height: 100%; width: 100%; position: absolute; z-index: 0;
     top:20px;
     z-index: 301;
     box-sizing: border-box; 
+
+
+    ::-webkit-scrollbar
+{
+    width: 0px;
+}
+
 
 
 
@@ -391,6 +410,16 @@ height: 100%; width: 100%; position: absolute; z-index: 0;
   box-sizing: border-box;
   transition: all 1s ease-in-out;
   overflow: scroll;
+  
+
+
+
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+
+
   
 
 }
